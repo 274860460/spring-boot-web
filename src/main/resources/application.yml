@@ -1,0 +1,34 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: spring-boot-web
+  data:
+    mongodb:
+      host: iselin.cc
+      port: 27017
+      grid-fs-database: dlp-file-system
+      database: dlp
+  rabbitmq:
+    host: rabbitmq-server
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+      url: jdbc:mysql://mysql-server:3306/rabbitmq_test?useUnicode=true&characterEncoding=utf-8&useSSL=true
+      username: mpldb
+      password: HBjFZXQP
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+
+security:
+  basic:
+    enabled: false
+
+
+
